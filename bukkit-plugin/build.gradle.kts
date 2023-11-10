@@ -1,16 +1,16 @@
 dependencies {
     api(projects.pluginCore)
     api(projects.bukkitCommon)
-    compileOnly("dev.folia", "folia-api", "1.19.4-R0.1-SNAPSHOT") {
+    compileOnly("dev.folia", "folia-api", "1.20.2-R0.1-SNAPSHOT") {
         attributes {
             attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, 17)
         }
     }
     implementation("xyz.jpenilla", "reflection-remapper", "0.1.0-SNAPSHOT")
 
-    implementation("org.geysermc.geyser.adapters", "spigot-all", "1.6-SNAPSHOT")
+    implementation("org.geysermc.geyser.adapters", "spigot-all", "1.10-SNAPSHOT", classifier="all")
 
-    compileOnly("com.viaversion", "viaversion", "4.6.0")
+    compileOnly("com.viaversion", "viaversion", "4.8.1")
 }
 
 relocate("it.unimi.dsi.fastutil")
