@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
     api(projects.common)
-    compileOnly("dev.folia", "folia-api", "1.19.4-R0.1-SNAPSHOT") {
+    compileOnly("dev.folia", "folia-api", "1.20.2-R0.1-SNAPSHOT") {
         attributes {
             attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, 17)
         }
